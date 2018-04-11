@@ -7,12 +7,12 @@ const Card = ({ item }) => {
     description,
     stargazers_count,
     license,
-    url } = item;
+    html_url } = item;
 
   return (
     <div className='card'>
       <CardSection>
-        <a style={{textDecoration: 'none'}} href={url}>
+        <a style={{textDecoration: 'none'}} href={html_url}>
           <h4 style={{color: '#527dbf'}}>{full_name}</h4>
         </a>
         <h4>{description || 'No description available.'}</h4>
